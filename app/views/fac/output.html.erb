@@ -1,0 +1,31 @@
+<div class="text-center border border-light p-5">
+  <p class="h4 mb-4"> Вывод результатов</p>
+  <table class="table">
+    <tr> <th>Номер итерации</th>
+      <th>Факториал</th>
+      <th>Первое число</th>
+      <th>Второе число</th>
+      <th>Третье число</th>
+      <th>Подходит</th>
+    </tr> <%i = 1%>
+    <% @result.each do |elem| %>
+      <tr>
+        <td> <%=i%> </td>
+        <td> <%=elem[1] %></td>
+        <td> <%=elem[2] %></td>
+        <td> <%=elem[3]%> </td>
+        <td> <%=elem[4]%> </td>
+        <td> <%=elem[5]%> </td>
+      </tr>
+      <%i = i + 1%>
+    <% end %>
+  </table>
+</div>
+<form action="<%= fac_input_url %>" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+    <input class="btn btn-outline-primary btn-block my-4" type="submit" value="Ввести новое число"> </div>
+</form>
+<form action="<%= fac_show_url %>" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+    <input class="btn btn-outline-primary btn-block my-4" type="submit" value="Показать базу данных"> </div>
+</form>

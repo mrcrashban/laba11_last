@@ -1,0 +1,15 @@
+<form action = "<%= fac_output_url %>" method = "get" class="text border border-light p-2">
+  <h2>Гипотеза симона</h2>
+  <p>Существует гипотеза Симона о факториале. Она гласит, что существует
+    4 факториала, которые представимы в виде произведения трех последовательных
+    чисел. Например: 4! =2.3.4. Написать программу, определяющую эту четверку,
+    подсчитать действительное количество таких факториалов, если это возможно и
+    тем самым доказать неправильность гипотезы. Вывести на печать результаты
+    каждой итерации и финальных расчетов</p>
+  <div class = 'row'>
+    <input name ="num" type="number" required step = "any" placeholder="Ваше число" class="form-control" style="margin-bottom: 20px">
+    <input class="btn btn-primary " type="submit" value="Вычислить"> </div> </form>
+<form action="<%= fac_show_url %>" method="get" class="text border border-light p-2">
+  <div class = 'row'>
+    <input class="btn btn-primary " type="submit" value="Показать базу данных"> </div>
+</form>
